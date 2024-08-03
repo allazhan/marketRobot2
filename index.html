@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  
+           <h1>Robotics Store</h1>
+   
+    <div id="cart">
+      <span>Cart: <span id="cart-count">0</span></span>
+      <button id="view-cart-btn" onclick="toggleCart()">View Cart</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <img src="images/tankbot.jpg" alt=изображение танкобота>
+      <h2>Robot-tankbot </h2>
+      <p class="strong">Описание:Он разработан для выполнения различных задач, связанных с передвижением, манипуляцией и взаимодействием с окружающей средой</p>
+      <p class="strong">Характеристики:Большой мотор: Высокий крутящий момент и высокая точность управления.</p>
+      <p>Price: $520</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 1', 520)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/робо рука.webp" alt="изоброжение робо руки ">
+      <h2>робо рука </h2>
+      <p class="strong">Описание: Робот-манипулятор предназначен для выполнения различных операций в условиях, недоступных для человека.</p>
+      <p>Price: $150</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 2', 150)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/аркан.png" alt="изображение робота аркан тартыс">
+      <h2>Robот аркан тартис </h2>
+      <p class="strong">Описание: Этот вид соревнований называется "Аркан тартыс" он проходит так нужно создать два робота и скрипление .</p>
+      <p class="strong">Характеристики:Два робота размещаются напротив друг друга на ровной поверхности. Между ними натягивается веревка.</p>
+      <p>Price: $200</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 3', 200)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/гимнаст.jpg" alt="изображение робота гимнаст ">
+      <h2>Roboт гимнаст </h2>
+      <p class="strong">Описание:робот гимнаст он крутится на опоре которой он крутится есть 3 режима 1 слабый второй средний и третий сильный  </p>
+      <p class="strong"> Характеристики:мотор на котром крутится модель он ускоряется при помощи модуля на котромдержится эта программа </p>
+      <p>Price: $200</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 4', 200)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/робот стрелок.jpg" alt="изображение робота стрелка ">
+      <h2>робот стрелок </h2>
+      <p class="strong">Описание:Такой робот может быть использован в учебных целях для изучения основ робототехники и программирования,Роботы-стрелки также популярны в соревнованиях по робототехнике, где они соревнуются в точности и скорости выполнения задач.  </p>
+      <p class="strong"> Характеристики:Моторы: Робот оснащен двумя крупными сервомоторами EV3, которые обеспечивают его передвижение.  </p>
+      <p>Price: $200</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 4', 200)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/сумо.jpg" alt="изображение робота сумо  ">
+      <h2>Roboт тележа </h2>
+      <p class="strong">Описание:робот сумо используется в соревнованиях ЕВ3,соревнования проходят так два робота стают друг против друга икогда судья начинает бой то роботы ищют датчиком ультразвукам противника когда находятся то они едут на  друг друга и тот который вытолкнет противника за линию тот выйграл   </p>
+      <p class="strong"> Характеристики:у робота два больших мотора на которых средние колеса а спереди одно маленький шар,спередиу робота у него там стоит ковш штобы вытолкнуть робота </p>
+      <p>Price: $200</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 4', 200)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/робот тележа.webp" alt="изображение робота гимнаст ">
+      <h2>Roboт тележа </h2>
+      <p class="strong">Описание:робот тележка едет ровно по черной линии с помощью датчика цвета и собират кубы </p>
+      <p class="strong"> Характеристики:два больших моторов которые крутят робота датчик ультро звука, когда робот подъежает к стенке то ультро звук пускает звук </p>
+      <p>Price: $200</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 4', 200)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/асык.jpg" alt="изображение робота гимнаст ">
+      <h2>Roboт асык </h2>
+      <p class="strong">Описание:робот асык это вид соревнования  </p>
+      <p class="strong"> Характеристики:два больших моторов которые крутят робота датчик ультро звука, когда робот подъежает к стенке то ультро звук пускает звук </p>
+      <p>Price: $200</p>
+      <button class="add-to-cart" onclick="addToCart('Robot Model 4', 200)">Add to Cart</button>
+    </div>
+    <footer>
+      <p>&copy; 2024 Мир робототехники. Все права защищены.</p>
+  </footer>
+  </div>
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleCart()">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
